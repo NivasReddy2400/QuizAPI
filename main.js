@@ -13,7 +13,7 @@ function displayQuestion(data){
 }
 
 function checkans(){
-    if(crctans === )
+    
 }
  
 
