@@ -69,13 +69,22 @@ a{
     -webkit-user-select: none;
     -ms-user-select: none; 
     user-select: none; 
-    
+    cursor: pointer;
 }
+
 .option:hover{
     opacity:0.8;
     transition: ease-in;
-    cursor: pointer;
+    background-color:rgb(175, 172, 93);
+
+    
 }
+
+.option:active{
+    transition: ease-in;
+    scale:0.99
+}
+
 h3{
     font-weight: 300;
     margin-bottom: 5px;

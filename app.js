@@ -25,7 +25,7 @@ function displayCurrentQuestion() {
   question.textContent = currentQuestion.question;
   let crctans = currentQuestion.correct_answer;
   let incrctans = currentQuestion.incorrect_answers;
-  let optionList = incrctans.slice();
+  let optionList = incrctans;
   optionList.splice(Math.floor(Math.random() * (incrctans.length + 1)), 0, crctans);
   ans1.textContent = optionList[0];
   ans2.textContent = optionList[1];
@@ -51,7 +51,7 @@ function handleNextClick() {
   
   function handlePreviousClick() {
     currentQuestionIndex--;
-    if (currentQuestionIndex < 0) {
+    if (currentQuestionIndex <= 0) {
       currentQuestionIndex = quiz.length - 1;
     }
     displayCurrentQuestion();
@@ -81,8 +81,6 @@ ans4.addEventListener('click', function() {
   displayCurrentQuestion();
 });
 
-
-
 next.addEventListener('click', handleNextClick);
 previous.addEventListener('click', handlePreviousClick);
 
@@ -91,7 +89,7 @@ submitBtn.addEventListener('click', function() {
   result.textContent = `You scored ${score} out of ${quiz.length}`;
   quizContainer.appendChild(result);
   setTimeout(()=>{
-    result.textContent = " "
+    result.textContent = ""
   },3000)
 });
 
