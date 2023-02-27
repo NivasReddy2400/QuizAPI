@@ -62,12 +62,15 @@ a{
 
 .option{
     padding:1rem;
-    background-color: rgb(90, 179, 149);
+    background-color: rgb(220, 216, 162);
     margin: .5rem;
     border-radius: .4rem;
     list-style: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    
 }
-
 .option:hover{
     opacity:0.8;
     transition: ease-in;
@@ -90,11 +93,14 @@ h3{
     border-radius:4px;
 }
 
-.next{
+#next{
     background-color: rgb(126, 126, 219);
 }
-.previous{
+#previous{
     background-color: rgb(167, 132, 76);
+}
+#submit{
+    background-color: rgb(59, 137, 52);
 }
 .btn:hover{
     scale: 1.05;
