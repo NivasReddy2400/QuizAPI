@@ -1,3 +1,4 @@
+const csapi = 'https://opentdb.com/api.php?amount=34&category=18&difficulty=hard&type=multiple';
 const quizContainer = document.querySelector('.container');
 const question = document.querySelector('.question');
 const ans1 = document.querySelector('#ans1');
@@ -10,8 +11,8 @@ const previous = document.querySelector('#previous');
 
 let quiz = [];
 let currentQuestionIndex = 0;
-let score = 0;
-const csapi = 'https://opentdb.com/api.php?amount=34&category=18&difficulty=hard&type=multiple'
+let score = 0; 
+
 fetch(csapi)
 .then(res=>{
     return res.json();

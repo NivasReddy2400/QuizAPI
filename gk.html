@@ -9,18 +9,24 @@
 </head>
 <body>
     <div class="container">
+        <div class="remaining"></div>
         <div class="question-container">
-            <h3 question>The Question</h3>
+            <h3 class='question'></h3>
             <ul class="parent-option">
-                <li class="option ans1">1</li>
-                <li class="option ans2">2</li>
-                <li class="option ans3">3</li>
-                <li class="option ans4">4</li>
+                <li class="option" id="ans1"></li>
+                <li class="option" id="ans2"></li>
+                <li class="option" id="ans3"></li>
+                <li class="option" id="ans4"></li>
             </ul>
+            
+        </div class=".btns">
+        <div>
+        <input class="btn" id="previous" type="button" value="Previous">
+        <input class="btn" id="next" type="button" value="Next">
+        <input type="submit" id="submit" class="btn" value="Submit">
         </div>
-        <input class="btn next" type="button" value="Next">
-       <input class="btn previous" type="button" value="Previous">
     </div>
-    <script src=""></script>
+    
+    <script src="main.js"></script>
 </body>
 </html>
